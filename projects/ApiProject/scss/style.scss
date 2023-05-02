@@ -1,0 +1,59 @@
+//IMPORTING THE VARS
+@import "vars";
+
+//Mixin to change the img size
+@mixin imgResize ( $size: 480px) {
+    @media screen and (max-width: $size ) {
+        @content;
+    }
+}
+.imgEvent {
+    @include imgResize (768px) { width: 20% }
+    @include imgResize () { width: 30% }
+}
+//Mixin to give the transform scale to the img-films elements
+@mixin transform ($property) {
+    transform: $property;
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-transform: $property;
+    -o-transform: $property;
+}
+//Function to give inverted color just for practise the invert function 
+@function randomColor() {
+    $colorLetter: invert(invert($primary));
+    @return $colorLetter;
+}
+#headerImg a {
+    color: $secondary;
+    font-size: large;
+}
+.rowName {
+    color: randomColor();
+}
+.footerText {
+    color: $secondary;
+}
+//Using the font Var
+*{
+    font-family: $bebas;
+}
+
+.imgEvent {
+    transition: all .3s;
+}
+
+.imgEvent:hover{
+    cursor: pointer;
+    @include transform(scale(1.2))
+}
+#myModal{
+    opacity: 0.8;
+}
+
+.col{
+    margin: 10px;
+}
+#modalValoration{
+    cursor: auto;
+}

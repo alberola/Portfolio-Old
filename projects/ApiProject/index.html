@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>TMDB API</title>
+  </head>
+  <body class="bg-dark" id="bodyContent">
+    <!-- Header -->
+    <div id="headerImg" class="mb-5">
+      <nav class="navbar navbar-expand-lg mt-3">
+        <div class="container">
+          <a
+            class="navbar-brand"
+            target="_blank"
+            href="https://www.themoviedb.org/?language=es"
+            ><img
+              src="img/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+              alt="Logo"
+              width="100"
+              height="100"
+            />
+          </a>
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Populares"
+                  >Populares</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Animación"
+                  >Animación</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Terror"
+                  >Terror</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Romance"
+                  >Romance</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Tendencia"
+                  >Tendencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#Próximas Películas"
+                  >Proximamente</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search" id="formControl">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+                id="searchFilm"
+              />
+            </form>
+            <div class="dropstart">
+              <a
+                href="#"
+                class="text-white mx-2 pt-sm-3 pt-md-0 text-decoration-none dropdown"
+                id="dropdownUser1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-balloon-heart-fill">
+                  <span id="favouriteList"></span>
+                </i>
+              </a>
+              <ul
+                class="dropdown-menu shadow p-3"
+                aria-labelledby="dropdownUser1"
+                id="menuFavourites"
+              >
+                <li class="dropdown-item">
+                  <h5>Tus Películas Favoritas</h5>
+                </li>
+                <li class="dropdown-item">
+                  <hr class="dropdown-divider" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Body -->
+    <div class="container-fluid" id="globalContainer"></div>
+
+    <!-- FOOTER -->
+    <div class="text-center text-white p-3 my-3">
+      <span>© 2023 :</span>
+        <a class="footerText" href="https://github.com/alberola" target="_blank">Alejandro Alberola</a>
+      <span> All Right Reserved</span>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

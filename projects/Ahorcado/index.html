@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="cargarLongitud()">
+    <h1 id="contador">60</h1>
+    <div>
+        <div class="ahorcado">
+            <img  width="300px" id="img">
+            <h1 id="espacios"></h1>
+        </div>
+            <input type="text" name="texto" id="texto" class="button-55" autocomplete="off" ><br>
+            <button class="button-55" onclick="probar()">Probar</button>
+        <div class="botones">
+            <input type="reset" value="Reiniciar" class="button-55" onclick="recargar()">   
+            <input type="button"value="Resolver" onclick="resolver()" class="button-55">         
+        </div>
+        <h2 id="caracteres"></h2>
+    </div>
+    <script src="ahorcado.js"></script>
+</body>
+</html>

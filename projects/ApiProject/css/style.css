@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "bebas";
+  src: url("fonts/BebasNeue-Regular.otf");
+}
+@media screen and (max-width: 768px) {
+  .imgEvent {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .imgEvent {
+    width: 30%;
+  }
+}
+
+#headerImg a {
+  color: #01b4e4;
+  font-size: large;
+}
+
+.rowName {
+  color: white;
+}
+
+.footerText {
+  color: #01b4e4;
+}
+
+* {
+  font-family: "bebas";
+}
+
+.imgEvent {
+  transition: all 0.3s;
+}
+
+.imgEvent:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+#myModal {
+  opacity: 0.8;
+}
+
+.col {
+  margin: 10px;
+}
+
+#modalValoration {
+  cursor: auto;
+}/*# sourceMappingURL=style.css.map */

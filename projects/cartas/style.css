@@ -1,0 +1,23 @@
+.col-3{
+    height: 300px;
+}
+hr {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cambio {
+	-webkit-animation: imagen 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse backwards;
+	        animation: imagen 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse backwards;
+}
+@keyframes imagen{
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    100% {
+      -webkit-transform: rotateX(-180deg);
+              transform: rotateX(-180deg);
+    }
+}
+  
